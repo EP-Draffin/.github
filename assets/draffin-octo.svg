@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Draffin octo on a park bench</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f1ec"/>
+      <stop offset="1" stop-color="#cfe2d6"/>
+    </linearGradient>
+    <linearGradient id="timber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c98a4b"/>
+      <stop offset="1" stop-color="#a5672f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <circle cx="256" cy="256" r="248" fill="url(#sky)"/>
+  <path d="M8 360 Q256 330 504 360 L504 400 A248 248 0 0 1 8 400 Z" fill="#7fb08f"/>
+  <path d="M30 420 Q256 395 482 420 A248 248 0 0 1 30 420 Z" fill="#5e9572"/>
+
+  <!-- bench: back slats -->
+  <g>
+    <rect x="96" y="226" width="320" height="22" rx="5" fill="url(#timber)"/>
+    <rect x="96" y="256" width="320" height="22" rx="5" fill="url(#timber)"/>
+    <g stroke="#8a5424" stroke-width="2" opacity=".45" fill="none">
+      <path d="M120 237 h60 M220 236 h90 M340 238 h50"/>
+      <path d="M110 267 h80 M240 266 h60 M330 268 h70"/>
+    </g>
+  </g>
+
+  <!-- octo body (sits behind seat) -->
+  <g id="octo">
+    <!-- tentacles draped over seat -->
+    <g fill="#2f3a3f">
+      <path d="M200 318 q-10 40 -34 52 q-10 5 -4 12 q22 -2 40 -30 q8 -14 12 -32 z"/>
+      <path d="M232 322 q-4 44 -16 62 q-6 8 2 12 q18 -10 24 -40 q3 -16 2 -34 z"/>
+      <path d="M280 322 q4 44 16 62 q6 8 -2 12 q-18 -10 -24 -40 q-3 -16 -2 -34 z"/>
+      <path d="M312 318 q10 40 34 52 q10 5 4 12 q-22 -2 -40 -30 q-8 -14 -12 -32 z"/>
+    </g>
+    <!-- head -->
+    <path d="M176 214 q-6 -46 6 -86 l26 34 q48 -18 96 0 l26 -34 q12 40 6 86 q-4 70 -80 104 q-76 -34 -80 -104 z" fill="#323a3f"/>
+    <!-- face plate -->
+    <path d="M196 212 q60 -30 120 0 q6 52 -60 78 q-66 -26 -60 -78 z" fill="#f3d9bd"/>
+    <!-- eyes -->
+    <ellipse cx="232" cy="226" rx="11" ry="15" fill="#c0603a"/>
+    <ellipse cx="280" cy="226" rx="11" ry="15" fill="#c0603a"/>
+    <circle cx="235" cy="221" r="4" fill="#fff"/>
+    <circle cx="283" cy="221" r="4" fill="#fff"/>
+    <!-- nose + smile -->
+    <ellipse cx="256" cy="248" rx="4" ry="3" fill="#c0603a"/>
+    <path d="M244 258 q12 10 24 0" stroke="#c0603a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- whiskers -->
+    <g stroke="#323a3f" stroke-width="2.5" stroke-linecap="round">
+      <path d="M200 246 l-28 -4 M200 254 l-28 4"/>
+      <path d="M312 246 l28 -4 M312 254 l28 4"/>
+    </g>
+    <!-- hi-vis hard hat -->
+    <path d="M196 150 q60 -52 120 0 z" fill="#f2a900"/>
+    <rect x="186" y="146" width="140" height="10" rx="5" fill="#f2a900"/>
+    <rect x="248" y="112" width="16" height="36" rx="6" fill="#ffc63a"/>
+    <!-- arm holding a hex key -->
+    <path d="M318 290 q34 -6 46 -34 q4 -10 -6 -12 q-14 22 -44 30 z" fill="#2f3a3f"/>
+    <path d="M358 246 l18 -26 l8 6" stroke="#9aa3a8" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- bench seat (in front of body) -->
+  <rect x="80" y="296" width="352" height="20" rx="5" fill="url(#timber)"/>
+  <rect x="80" y="320" width="352" height="18" rx="5" fill="#b77a3d"/>
+
+  <!-- powder-coated steel frame -->
+  <g fill="#323232">
+    <path d="M110 226 h16 v170 h-16 z"/>
+    <path d="M386 226 h16 v170 h-16 z"/>
+    <path d="M96 392 h44 v10 h-44 z"/>
+    <path d="M372 392 h44 v10 h-44 z"/>
+    <path d="M104 286 h-18 q-8 0 -8 8 v8 h34 z"/>
+    <path d="M408 286 h18 q8 0 8 8 v8 h-34 z"/>
+  </g>
+  <g fill="#9aa3a8">
+    <circle cx="118" cy="237" r="3"/><circle cx="118" cy="267" r="3"/>
+    <circle cx="394" cy="237" r="3"/><circle cx="394" cy="267" r="3"/>
+  </g>
+</svg>
